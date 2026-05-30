@@ -20,6 +20,12 @@ const config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
+  customFields: {
+    // Naver Cloud Platform Maps Client ID.
+    // Web 서비스 URL allowlist에 https://hscho-yskim.github.io 추가 필요.
+    naverMapsClientId: "1li32iz1ka",
+  },
+
   i18n: {
     defaultLocale: "ko",
     locales: ["ko"],
