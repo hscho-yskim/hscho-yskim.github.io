@@ -1,14 +1,19 @@
 <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
   <rect width="64" height="64" rx="14" fill="#2b2b2b"/>
-  <g transform="translate(32 32)" fill="#ffffff">
-    <g id="petals">
-      <ellipse cx="0" cy="-13" rx="6.5" ry="11"/>
-      <ellipse cx="0" cy="-13" rx="6.5" ry="11" transform="rotate(72)"/>
-      <ellipse cx="0" cy="-13" rx="6.5" ry="11" transform="rotate(144)"/>
-      <ellipse cx="0" cy="-13" rx="6.5" ry="11" transform="rotate(216)"/>
-      <ellipse cx="0" cy="-13" rx="6.5" ry="11" transform="rotate(288)"/>
-    </g>
-    <circle cx="0" cy="0" r="5.5" fill="#2b2b2b"/>
-    <circle cx="0" cy="0" r="3" fill="#ffffff"/>
+  <!-- Bride veil (behind, flaring like a train) -->
+  <path d="M42 10c-9 0-14 9-15 23-0.5 7 0 13 0 21h7c0-9-1-16 0-23 0.8-9 3.5-13 8-13s7.2 4 8 13c1 7 0 14 0 23h7c0-8 0.5-14 0-21-1-14-6-23-15-23z" fill="#ffffff" opacity="0.5"/>
+  <g fill="#ffffff">
+    <!-- Groom -->
+    <circle cx="22" cy="22" r="8"/>
+    <path d="M8 54c0-8.3 6.3-15 14-15s14 6.7 14 15v1H8z"/>
+    <!-- Bride -->
+    <circle cx="42" cy="22" r="8"/>
+    <path d="M28 55c0-8.3 6.3-16 14-16s14 7.7 14 16v0H28z"/>
+  </g>
+  <g fill="#2b2b2b">
+    <!-- gap between the two -->
+    <path d="M31 39c2 4 2 12 0 16h2c-2-4-2-12 0-16z"/>
+    <!-- groom bow tie -->
+    <path d="M22 41l-6-3v6zM22 41l6-3v6z"/>
   </g>
 </svg>
