@@ -29,15 +29,15 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* Two-tone iOS rubber-band overscroll: the html background paints the TOP
-   overscroll, the body background paints the BOTTOM. Top matches the cover
-   photo's top edge so the header blends in; bottom stays white. */
+/* Two-tone iOS rubber-band overscroll. The html canvas is painted white
+   (bottom edge -> bottom overscroll stays white) with a beige band over the
+   top (top edge -> header overscroll blends into the cover photo). */
 html {
-  background-color: #d5c7bf;
-}
-
-body {
   background-color: #ffffff;
+  background-image: linear-gradient(#d5c7bf, #d5c7bf);
+  background-repeat: no-repeat;
+  background-size: 100% 600px;
+  background-position: top center;
 }
 
 html:has(.wedding-codex-layout) body {
