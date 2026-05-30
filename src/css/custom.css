@@ -29,10 +29,15 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* Match the top overscroll (iOS rubber-band) to the cover photo's top edge
-   so scrolling above the header blends into the photo instead of a white gap. */
+/* Two-tone iOS rubber-band overscroll: the html background paints the TOP
+   overscroll, the body background paints the BOTTOM. Top matches the cover
+   photo's top edge so the header blends in; bottom stays white. */
 html {
   background-color: #d5c7bf;
+}
+
+body {
+  background-color: #ffffff;
 }
 
 html:has(.wedding-codex-layout) body {
