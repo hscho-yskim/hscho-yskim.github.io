@@ -7,7 +7,7 @@ const darkCodeTheme = themes.dracula;
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "조현수 · 김용성 청첩장",
-  favicon: "img/favicon.ico",
+  favicon: "img/favicon.ico?v=2",
 
   url: "https://hscho-yskim.github.io",
   baseUrl: "/",
@@ -18,14 +18,14 @@ const config = {
       attributes: {
         rel: "icon",
         type: "image/svg+xml",
-        href: "/img/favicon.svg",
+        href: "/img/favicon.svg?v=2",
       },
     },
     {
       tagName: "link",
       attributes: {
         rel: "apple-touch-icon",
-        href: "/img/apple-touch-icon.png",
+        href: "/img/apple-touch-icon.png?v=2",
       },
     },
   ],
