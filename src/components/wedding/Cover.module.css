@@ -43,15 +43,15 @@
 }
 
 .date {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 400;
   letter-spacing: 0.1em;
   color: #0a0a0a;
-  margin: 0 0 8px;
+  margin: 0 0 10px;
 }
 
 .venue {
-  font-size: 0.875rem;
+  font-size: 1.0625rem;
   font-weight: 400;
   letter-spacing: 0.06em;
   color: #6b6b6b;
