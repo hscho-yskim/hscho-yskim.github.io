@@ -1,0 +1,14 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="14" fill="#2b2b2b"/>
+  <g transform="translate(32 32)" fill="#ffffff">
+    <g id="petals">
+      <ellipse cx="0" cy="-13" rx="6.5" ry="11"/>
+      <ellipse cx="0" cy="-13" rx="6.5" ry="11" transform="rotate(72)"/>
+      <ellipse cx="0" cy="-13" rx="6.5" ry="11" transform="rotate(144)"/>
+      <ellipse cx="0" cy="-13" rx="6.5" ry="11" transform="rotate(216)"/>
+      <ellipse cx="0" cy="-13" rx="6.5" ry="11" transform="rotate(288)"/>
+    </g>
+    <circle cx="0" cy="0" r="5.5" fill="#2b2b2b"/>
+    <circle cx="0" cy="0" r="3" fill="#ffffff"/>
+  </g>
+</svg>

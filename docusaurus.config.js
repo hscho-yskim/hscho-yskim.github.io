@@ -12,6 +12,24 @@ const config = {
   url: "https://hscho-yskim.github.io",
   baseUrl: "/",
 
+  headTags: [
+    {
+      tagName: "link",
+      attributes: {
+        rel: "icon",
+        type: "image/svg+xml",
+        href: "/img/favicon.svg",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "apple-touch-icon",
+        href: "/img/apple-touch-icon.png",
+      },
+    },
+  ],
+
   organizationName: "hscho-yskim",
   projectName: "hscho-yskim.github.io",
   deploymentBranch: "gh-pages",
