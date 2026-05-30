@@ -1,0 +1,64 @@
+.gallery {
+  padding: 0 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+}
+
+.tile {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #f0f0f0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.tile:hover {
+  opacity: 0.88;
+}
+
+.tile:active {
+  transform: scale(0.98);
+}
+
+.tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.moreBtn {
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+  padding: 14px;
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  border-radius: 12px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #0a0a0a;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.moreBtn:hover {
+  background: #0a0a0a;
+  color: #ffffff;
+  border-color: #0a0a0a;
+}
+
+.moreBtn:active {
+  transform: scale(0.99);
+}
