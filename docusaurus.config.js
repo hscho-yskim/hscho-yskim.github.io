@@ -54,6 +54,10 @@ const config = {
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        gtag: {
+          trackingID: "G-H1WBJSV2Y9",
+          anonymizeIP: true,
+        },
         docs: false,
         blog: false,
         theme: {
