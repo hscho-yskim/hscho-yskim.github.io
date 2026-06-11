@@ -7,6 +7,7 @@ import Gallery from '@site/src/components/wedding/Gallery';
 import Venue from '@site/src/components/wedding/Venue';
 import Gift from '@site/src/components/wedding/Gift';
 import SectionHeading from '@site/src/components/wedding/SectionHeading';
+import KakaoShare from '@site/src/components/wedding/KakaoShare';
 
 import styles from './styles.module.css';
 
@@ -86,6 +87,7 @@ export default function WeddingPage(): JSX.Element {
       </Head>
 
       <div className={styles.page}>
+        <KakaoShare />
         <div className={styles.card} ref={rootRef}>
           <div className={styles.reveal}>
             <Cover />
