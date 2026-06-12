@@ -25,7 +25,7 @@ yarn typecheck      # tsc 타입 체크
 
 ## 컨벤션
 
-- 패키지 매니저는 **yarn** (저장소에 `yarn.lock`만 존재, `npm ci`는 CI에서 실패함)
+- 패키지 매니저는 yarn (저장소에 `yarn.lock`만 존재, `npm ci`는 CI에서 실패함)
 - 스타일은 CSS Modules (`*.module.css`), 모바일 우선, max-width 440px 카드 레이아웃
 - 폰트 사이즈는 `rem` 단위 (디바이스 폰트 설정 반영)
 - 텍스트는 한국어
@@ -41,14 +41,22 @@ git push origin main
 워크플로 단계: `yarn install --frozen-lockfile` → `yarn build` → `build/`를 Pages
 아티팩트로 업로드 → `actions/deploy-pages@v4`로 배포.
 
-- 수동 실행: GitHub **Actions → Deploy to GitHub Pages → Run workflow** (`workflow_dispatch`)
+- 수동 실행: GitHub Actions → Deploy to GitHub Pages → Run workflow (`workflow_dispatch`)
 - 상태 확인: `gh run list --repo hscho-yskim/hscho-yskim.github.io`
 - 실행 추적: `gh run watch <run-id> --repo hscho-yskim/hscho-yskim.github.io`
 
-### 최초 설정 (한 번만)
+### Pages 소스 설정 (완료됨)
 
-저장소 **Settings → Pages → Source**를 **GitHub Actions**로 설정해야 워크플로 배포가
-실제 사이트에 반영됩니다. *Deploy from a branch*로 두면 중복 legacy 빌드가 함께 돕니다.
+저장소 Settings → Pages → Source는 GitHub Actions로 설정되어 있어야 워크플로
+배포가 실제 사이트에 반영됩니다. Deploy from a branch로 두면 `main` 루트의 `README.md`가
+홈페이지로 렌더링되고, 중복 legacy 빌드가 함께 돕니다.
+
+2026-06-12에 `GitHub Actions`로 설정 완료. 확인·변경 명령:
+
+```bash
+gh api repos/hscho-yskim/hscho-yskim.github.io/pages          # build_type 확인 ("workflow"여야 함)
+gh api -X PUT repos/hscho-yskim/hscho-yskim.github.io/pages -f build_type=workflow  # 재설정
+```
 
 ### 주의
 

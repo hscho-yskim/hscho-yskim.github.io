@@ -35,11 +35,14 @@ git push origin main
 ```
 
 - 워크플로: `yarn install --frozen-lockfile` → `yarn build` → `build/`를 Pages 아티팩트로 업로드 → `actions/deploy-pages`로 배포
-- 수동 실행: GitHub의 **Actions → Deploy to GitHub Pages → Run workflow** (`workflow_dispatch`)
+- 수동 실행: GitHub의 Actions → Deploy to GitHub Pages → Run workflow (`workflow_dispatch`)
 - 배포 상태 확인: `gh run list --repo hscho-yskim/hscho-yskim.github.io`
 
-### 최초 설정 (한 번만)
+### Pages 소스 설정 (완료됨)
 
-저장소 **Settings → Pages → Build and deployment → Source**를 **GitHub Actions**로 설정해야
-이 워크플로의 배포가 실제 사이트에 반영됩니다. (기본값인 *Deploy from a branch*로 두면
-중복된 legacy 빌드가 함께 실행됩니다.)
+저장소 Settings → Pages → Build and deployment → Source는 GitHub Actions로
+설정되어 있어야 이 워크플로의 빌드가 실제 사이트에 반영됩니다. (Deploy from a branch로
+두면 `main` 루트의 `README.md`가 홈페이지로 렌더링되고, 중복된 legacy 빌드가 함께 실행됩니다.)
+
+> 2026-06-12에 `GitHub Actions`로 설정 완료. 변경이 필요하면:
+> `gh api -X PUT repos/hscho-yskim/hscho-yskim.github.io/pages -f build_type=workflow`
