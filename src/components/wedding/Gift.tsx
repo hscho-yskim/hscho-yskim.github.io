@@ -28,8 +28,18 @@ const sides: Side[] = [
       accountNumber: "378801-01-122436",
     },
     parents: [
-      {role: "아버지", name: "조영상"},
-      {role: "어머니", name: "김선희"},
+      {
+        role: "아버지",
+        name: "조영상",
+        bank: "신한은행",
+        accountNumber: "110-002-459413",
+      },
+      {
+        role: "어머니",
+        name: "김선희",
+        bank: "우리은행",
+        accountNumber: "1002-084-011300",
+      },
     ],
   },
   {
@@ -45,7 +55,6 @@ const sides: Side[] = [
       {
         role: "어머니",
         name: "신금채",
-        phone: "010-2727-2221",
         bank: "우리은행",
         accountNumber: "161-07-002228",
       },
